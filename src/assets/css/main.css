@@ -84,13 +84,15 @@ body{
 }
 
 .foot-note{
-    background: #7354f1;
+    background: #6748e7c4;
     margin-top: 0px;
     padding: 1% 2%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    color: #fff;
 }
-
+        
 .wrapper-end{
     display: flex;
     flex-direction: column;
@@ -150,4 +152,98 @@ body{
     width: 55%;
     border: 5px solid #fff;
     max-width: 100%;
+}
+
+
+/*blog*/
+
+.section-grid-blog{
+    display: grid;
+    grid-template-columns: 64% 1fr;
+    text-align: left;
+}
+
+.blog-body h1{
+    padding: 5% 0;
+    text-align: left;
+    font-weight: 700;
+}
+
+.blog-link a{
+    background: #3d1dbd7d;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section-single-blog-post{
+    padding: 7% 0;  
+}
+
+.single-post-date{
+    margin-left: 14px;
+}
+.author-name-single-post a{
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.single-post-meta{
+    margin-bottom: 2%;
+}
+
+
+/*Snipcart*/
+
+/*Snipcart Defaults*/
+
+.snipcart-button-container{
+    width: 100%;
+}
+
+.snipcart-add-item{
+    background: #7863e7c2 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 5%;
+    border: none;
+    padding: 1% 37px;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+#snipcart-header{
+    background: #eee !important;
+}
+        
+.snip-layout .snip-footer{
+    background: #d8d8d8 !important;
+}
+
+.snip-layout .snip-btn--highlight{
+    background-color: #1890ff !important;
+}
+
+/**/
+#book-wrapper-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#book-wrapper-content img {
+    width: 70%;
+}
+
+#book-order-wrapper img{
+    width: 28%;
 }

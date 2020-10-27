@@ -1,14 +1,28 @@
 import React from "react"
 import Layout from "../components/layout"
- 
-const IndexPage = () => (
+import BookImage from "../assets/books/book_cover.png"
+
+const Books = () => (
   <Layout>
   	<section className="page-wrapper">
 		
 		<div className="section-grid">
-			<div className="grid-child" id="book-wrapper">
+			<div className="grid-child" id="book-wrapper-content">
+				<img src={BookImage} alt="book"/>
 
-			</div>
+				 <div className="snipcart-button-container">
+                    <button
+                        className="snipcart-add-item"
+                        data-item-id="all-that-is"
+                        data-item-price="13.50"
+                        data-item-url="/"
+                        data-item-image={BookImage}
+                        data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                        data-item-name="All That Is">
+                        Add to cart
+                    </button>
+                  </div>
+			</div>		
 
 			<div className="grid-child" id="book-contents">
 
@@ -54,8 +68,14 @@ const IndexPage = () => (
   		</div>
 
   	</section>
+    <footer className="foot-note">
+	    <p>
+	        * Hint: all the really B-I-G expriences happen 
+	        in either the Wilderness, the Forest, or on the Mountain
+	    </p>
+    </footer>
   </Layout> 
 )
 
-export default IndexPage
+export default Books
 	

@@ -40,12 +40,6 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
 
-        <footer className="foot-note">
-          <p>
-            * Hint: all the really B-I-G expriences happen 
-            in either the Wilderness, the Forest, or on the Mountain
-          </p>
-        </footer>
       </div>
 
 
