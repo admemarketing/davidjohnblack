@@ -182,7 +182,9 @@ body{
 }
 
 .section-single-blog-post{
-    padding: 7% 0;  
+    padding: 7%;
+    background: #3c3c3c4d;
+    color: #fff;
 }
 
 .single-post-date{
@@ -190,7 +192,7 @@ body{
 }
 .author-name-single-post a{
     text-transform: uppercase;
-    color: #000;
+    color: #ffc239;
     text-decoration: none;
     font-size: 11px;
 }
