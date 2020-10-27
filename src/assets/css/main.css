@@ -273,7 +273,7 @@ body{
 }
 
 .abtiaryButton{
-    background: #080808;
+    background: #080808 !important;
     max-width: 200px;
     margin: 3% auto;
 }
