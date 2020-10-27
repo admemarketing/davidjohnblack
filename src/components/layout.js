@@ -10,7 +10,11 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "../assets/css/layout.css"
+import "../assets/css/main.css"
+
+import Navigation from "./navigation"
+import Nav from "./navigation"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,16 +30,17 @@ const Layout = ({ children }) => {
   return (
     <>  
       <Header siteTitle={data.site.siteMetadata?.title || `All That Is`} />
+      <Navigation />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 1250,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0px 0.7rem 1.45rem`,
         }}
       >
         <main>{children}</main>
 
-        <footer style={{marginTop: `2rem`}}>
+        <footer className="foot-note">
           <p>
             * Hint: all the really B-I-G expriences happen 
             in either the Wilderness, the Forest, or on the Mountain
